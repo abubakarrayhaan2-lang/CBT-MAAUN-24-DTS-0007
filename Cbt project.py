@@ -21,7 +21,7 @@ def home():
 
 @app.route("/quiz", methods=["GET", "POST"])
 def quiz():
-    questions = queue.get_all()
+    questions = queue.get_all()N
 
     if request.method == "POST":
         score = 0
